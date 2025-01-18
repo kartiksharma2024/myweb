@@ -207,6 +207,59 @@
             font-size: 16px;
         }
 
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .profile-links a {
+                display: block;
+                margin: 10px 0;
+                width: 100%;
+                padding: 15px 0;
+            }
+
+            .projects .project-card {
+                display: block;
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .about-me p, .contact p {
+                font-size: 16px;
+            }
+        }
+
+        /* Mobile Devices */
+        @media only screen and (max-width: 480px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            header img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-me p {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+
+            .skills .skill {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .contact p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -222,9 +275,9 @@
 
         <!-- Links Section -->
         <div class="profile-links">
-            <a href="practice.html"> My Work</a>
-            <a href="https://www.instagram.com/get_glamorous_21?igsh=MW4yGQ3cGwxczBvNg=="> My instagram</a>
-           <a href="http://www.behance.net/kartiksharma172">my behance work</a>
+            <a href="practice.html">My Work</a>
+            <a href="https://www.instagram.com/get_glamorous_21?igsh=MW4yGQ3cGwxczBvNg==">My Instagram</a>
+            <a href="http://www.behance.net/kartiksharma172">My Behance Work</a>
         </div>
 
         <!-- About Me Section -->
@@ -233,16 +286,12 @@
             <p>Hi! I'm Kartik Sharma, a passionate UI/UX Designer. I have worked on a variety of projects ranging from web design to mobile applications, with a strong emphasis on user-centered design. I strive to blend creativity and functionality to produce designs that not only look good but also provide exceptional user experiences.</p>
         </section>
 
-       
-
         <!-- Skills Section -->
         <section class="skills">
             <h2>My Skills</h2>
-            
             <div class="skill">Sketch</div>
             <div class="skill">Adobe XD</div>
             <div class="skill">HTML & CSS</div>
-        
             <div class="skill">Prototyping</div>
         </section>
 
@@ -252,8 +301,6 @@
             <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
             <p>Email: <a href="mailto: kartiksharma21800@gmail.com">kartiksharma21800@gmail.com</a></p>
         </section>
-
-       
 
     </div>
 
