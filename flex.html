@@ -53,6 +53,7 @@
       letter-spacing: 0.23px;
       float: left;
       margin-left: 100px;
+      list-style-type: none;
     }
 
     .pic {
@@ -64,43 +65,75 @@
       list-style: none;
       font-size: 20px;
     }
+    #main
+    {
+    width:99%;
+    display:flex;
+    flex-direction-row;
+    flex-wrap:wrap;
+    justify-content:space-around;
 
-    #menu span {
-      color: white;
-      width: 200px;
-      background: red;
-      padding: 2px;
-      margin: 2px;
-    }
+    }  
 
-    @media only screen and (max-width: 600px) {
-      #menu {
-        display: none;
+
+    #card1{}
+    #card2{}
+    #card3{}
+    #card4{}
+    #card5{}
+    #card6{} 
+
+
+  
+    @media only screen and (max-width: 600px) 
+    {
+      #topheader span{
+        font-size:40px;
+        height:20px;
       }
 
-      .card {
-        width: 90%; /* Make the cards take up more space on small screens */
-        margin-left: auto;
-        margin-right: auto;
-      }
+      #topheader{
+                height:120px;
     }
+   
+    #main
+        {
+        flex-direction:column;
+        }
+
+      .card
+          {
+           
+           margin-left:10px;
+           width:89%;
+           height:auto;
+list-style-type: none;
+          }
+
+        #menu
+          {
+          display:none;
+          }
   </style>
-</head>
-<body>
+  <body>
   <div id="topheader">
-    <span>Amazon</span>
+  <span>
+  Amazon
+  </span>
   </div>
 
   <div id="menu">Menu</div>
+  <div id="main">
 
-  <div class="card">
-    <img src="images/p11.jpeg" class="pic" alt="Lip Gloss">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Lip Gloss
+
+      <div class="card1">
+    <img src="images/p18.jpeg" class="pic" alt="Long Coat">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Long Coat
     </h3>
     <ol>
-      <li>Price: Rs1299 </li>
-      <li>Color:cherry red </li>
+      <li>Price: Rs5499 </li>
+      <li>Color:Beige </li>
       <li>Quantity:1 </li>
       <li></li>
       <li>
@@ -109,14 +142,14 @@
       </li>
     </ol>
   </div>
- <div class="card">
-    <img src="images/p12.jpeg" class="pic" alt="Lipsticks">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Lipsticks
+ <div class="card2">
+    <img src="images/p19.jpeg" class="pic" alt="Denim">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Denim
     </h3>
     <ol>
-      <li>Price: Rs1499 </li>
-      <li>Color: red </li>
+      <li>Price: Rs2499 </li>
+      <li>Color: Sky Blue </li>
       <li>Quantity:1 </li>
       <li></li>
       <li>
@@ -125,14 +158,14 @@
       </li>
     </ol>
   </div>
-<div class="card">
-    <img src="images/p13.jpeg" class="pic" alt="Compact powders">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Compact Powders
+<div class="card3">
+    <img src="images/p20.jpeg" class="pic" alt="Leather Jacket">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Leather Jacket
     </h3>
     <ol>
       <li>Price: Rs1899</li>
-      <li>Color:Dusky tones </li>
+      <li>Color:Brown </li>
       <li>Quantity:1 </li>
       <li></li>
       <li>
@@ -141,10 +174,10 @@
       </li>
     </ol>
   </div>
-<div class="card">
-    <img src="images/p15.jpeg" class="pic" alt="Jade Roller">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Jade Roller
+<div class="card4">
+    <img src="images/p21.jpeg" class="pic" alt="Baggy Trouser">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Baggy Trouser
     </h3>
     <ol>
       <li>Price: Rs2199</li>
@@ -157,14 +190,14 @@
       </li>
     </ol>
   </div>
-<div class="card">
-    <img src="images/p16.jpeg" class="pic" alt="Eye shadow">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Eye shadow
+<div class="card5">
+    <img src="images/p22.jpeg" class="pic" alt=" Coat">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Coat
     </h3>
     <ol>
       <li>Price: Rs2499</li>
-      <li>Color:Multi shades </li>
+      <li>Color:Warm Brown</li>
       <li>Quantity:1 </li>
       <li></li>
       <li>
@@ -173,14 +206,14 @@
       </li>
     </ol>
   </div>
-<div class="card">
-    <img src="images/p17.jpeg" class="pic" alt="Pigments">
-    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 10px 10px 10px gray">
-      Pigments
+<div class="card6">
+    <img src="images/p23.jpeg" class="pic" alt="Middy">
+    <h3 style="text-indent: 0; text-align: center; background: orange; padding: 3px; box-shadow: 5px 5px 5px gray">
+      Middy
     </h3>
     <ol>
       <li>Price: Rs1799</li>
-      <li>Color:Neons  </li>
+      <li>Color:Purple  </li>
       <li>Quantity:1 </li>
       <li></li>
       <li>
