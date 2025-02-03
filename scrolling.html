@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+            background: white;
+            background-image: url(images/p25.jpeg);
+            background-attachment: fixed;
+            background-size: cover;
+            color: #333;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        h2 {
+            font-family: 'Arial Black', sans-serif;
+            color: teal;
+            margin-top: 50px;
+        }
+
+        /* Header Section */
+        #topheader {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #topheader img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        #topheader img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Menu Styling */
+        .menu {
+            list-style: none;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: teal;
+            border-radius: 5px;
+        }
+
+        /* Main Section Styling */
+        #main {
+            margin-top: 100px; /* To avoid overlap with the fixed menu */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            max-width: 900px;
+            margin: 100px auto 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text {
+            background-color: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text h3 {
+            color: teal;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .text .data {
+            background-image: url(images/p26.jpeg);
+            color: white;
+            background-size: cover;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .text .data h3 {
+            color: white;
+            font-size: 28px;
+        }
+
+        .spacer {
+            height: 100px;
+        }
+
+        /* Back Button Styling */
+        .back-to-top {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: teal;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #003d40;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .menu li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .menu {
+                background-color: rgba(0, 0, 0, 0.8);
+                position: relative;
+            }
+
+            #main {
+                margin-top: 60px;
+                padding: 20px;
+            }
+
+            .text {
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #topheader img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#Service">Our Services</a></li>
+            <li><a href="#Products">Products</a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <div id="topheader">
+        <a href="#top">
+            <img src="images/p24.jpeg" alt="Cosmetic product">
+        </a>
+    </div>
+
+    <!-- Main Section -->
+    <div id="main">
+        <h2>Welcome to My Profile</h2>
+        <p>A "cosmetic product" refers to any substance intended to be applied to the human body for cleaning, beautifying, or altering appearance...</p>
+    </div>
+
+    <div class="text" id="AboutUs">
+        <h3>About Us</h3>
+        <p>
+            Tooth whitening products are classified as cosmetics. However, there are regulations on the amount of hydrogen peroxide allowed, limiting it to 0.1% or less. Products exceeding this amount are not legal.
+        </p>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="text" id="Service">
+        <h3>Our Services</h3>
+        <p>
+            At BiE, we believe beauty is a journey of self-empowerment. We provide products and services to help you on your personal transformation, embracing beauty from within.
+        </p>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="text" id="Products">
+        <h3>Products</h3>
+        <p>
+            Our skincare products blend science with nature to provide the best results. We are committed to clean beauty, offering products that enhance and protect your skin.
+        </p>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+
+    <!-- Scroll to Top Link -->
+    <div style="padding: 20px;">
+        <a href="#top" class="back-to-top">Go to Top</a>
+    </div>
+
+</body>
+</html>
