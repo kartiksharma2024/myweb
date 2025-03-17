@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head> 
+<title> Form </title>
+<style>
+html {
+  overflow: hidden;
+}
+
+@keyframes runbanner {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+  20% { transform: translateX(-20%); }
+  30% { transform: translateX(-20%); }
+  40% { transform: translateX(-40%); }
+  50% { transform: translateX(-40%); }
+  60% { transform: translateX(-60%); }
+  70% { transform: translateX(-60%); }
+  80% { transform: translateX(-80%); }
+  90% { transform: translateX(-80%); }
+  100% { transform: translateX(-100%); }
+}
+
+#container {
+  width: 500%;
+  display: flex;
+  height: 600px;
+  position: relative;
+  animation: runbanner 12s infinite linear;
+}
+
+.pic {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <img class="pic" src="images/p38.jpeg" alt="Image 1">
+  <img class="pic" src="images/p39.jpeg" alt="Image 2">
+  <img class="pic" src="images/p40.jpeg" alt="Image 3">
+  <img class="pic" src="images/p41.jpeg" alt="Image 4">
+  <img class="pic" src="images/p42.jpeg" alt="Image 5">
+</div>
+</body>
+</html>

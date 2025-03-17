@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banner</title>
+<style>
+@keyframes change_pic {
+  10% { background: url(images/p28.jpeg); background-repeat: no-repeat; background-size: cover; }
+  20% { background: url(images/p29.jpeg); background-repeat: no-repeat; background-size: 100%; }
+  30% { background: url(images/p30.jpeg); background-repeat: no-repeat; background-size: cover; }
+  40% { background: url(images/p31.jpeg); background-repeat: no-repeat; background-size: cover; }
+  50% { background: url(images/p32.jpeg); background-repeat: no-repeat; background-size: cover; }
+  60% { background: url(images/p33.jpeg); background-repeat: no-repeat; background-size: cover; }
+  70% { background: url(images/p34.jpeg); background-repeat: no-repeat; background-size: cover; }
+  80% { background: url(images/p35.jpeg); background-repeat: no-repeat; background-size: cover; }
+  90% { background: url(images/p36.jpeg); background-repeat: no-repeat; background-size: cover; }
+  100% { background: url(images/p37.jpeg); background-repeat: no-repeat; background-size: cover; }
+}
+
+@keyframes runtext {
+  from { margin-left: -300px; }
+  to { margin-left: 1800px; }
+}
+
+header {
+  width: 80%;
+  display: block;
+  background: teal;
+  height: 800px;
+  box-shadow: 10px 10px 10px gray;
+  margin: auto;
+  background-image: url(images/p1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: change_pic 25s infinite;
+}
+
+#runingtext {
+  color: white;
+  margin-left: -300px;
+  width: 200px;
+  font-size: 50px;
+  font-family: Arial Black;
+  width: 1500px;
+  animation: runtext 25s linear infinite alternate;
+}
+
+</style>
+</head>
+<body>
+
+<header></header>
+
+<div style="background: black">
+  <div id="runingtext">
+    WELCOME TO MY WEBSITE
+  </div>
+</div>
+
+</body>
+</html>
