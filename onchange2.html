@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    #micon
+    {
+        // position:absolute;
+        left:20px;
+        top:10px;
+        cursor:pointer;
+    }
+
+    #container
+    {
+        box-shadow:10px 10px 10px gray;
+        width:600px;
+        padding:20px;
+        background:gray;
+        color:white;
+        border-radius:30px;
+        transition:2s;
+        opacity:0;
+
+
+    }
+    #container #mycolor,#mycolor2
+    {
+        width:20px;
+        height:20px;
+        border-radius:500px;
+    }
+    #text
+    {
+        color:black;
+    }
+
+</style>
+<body>
+<div id="micon">🛑</div>
+<div id="container">
+    backgroundColor
+    <input type="color" id="mycolor">
+    Text color
+    <input type="color" id="mycolor2">
+    FontSize <input value="15" type="range" id="r1" min="15" max="70"><span id="n"
+
+</div>    
+
+<hr/>
+<h1>About</h1>
+<div id="text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis consectetur risus. Aenean ultricies venenatis velit sed dignissim. Ut augue dui, facilisis eu venenatis eu, finibus sit amet sem. Praesent tempor metus velit, eu dignissim odio dignissim et. Aliquam non erat sed neque porta vehicula sit amet ut nisi. Mauris quis cursus elit. Nunc vel posuere diam. Mauris dolor dui, consequat sed erat vitae, tempor vulputate nibh. Maecenas varius lacus ac sem malesuada, a feugiat sem auctor. Aliquam lacinia, sapien eu maximus vulputate, augue velit tempus libero, aliquam lobortis metus massa sit amet nisl. In efficitur pellentesque erat ornare ultricies. Maecenas a urna non dolor efficitur faucibus id eget mi.
+
+Morbi vitae libero odio. Praesent vehicula velit arcu, ac rhoncus velit tempus vel. Pellentesque faucibus lectus in leo mollis malesuada. Vestibulum gravida massa felis, ac viverra lacus accumsan eget. Sed magna ipsum, rutrum ut justo eget, posuere congue lacus. Donec quis tempus orci. Pellentesque eleifend condimentum lectus, sit amet imperdiet enim. Nunc eu cursus elit, nec interdum lacus. Vestibulum vehicula nibh et elit pulvinar, ut luctus tortor dignissim. Nam bibendum tempus neque, sed fermentum nisl faucibus nec. Curabitur condimentum ornare feugiat.
+
+Aenean eu posuere eros. Quisque at sem sapien. Aliquam tincidunt vulputate odio ut finibus. Nunc interdum turpis mauris, at volutpat erat tristique ut. Proin mattis, lectus sit amet mattis lobortis, lorem turpis venenatis ex, vel molestie leo magna et magna. Morbi efficitur nibh eu laoreet ultricies. Donec quis odio turpis. Nullam malesuada pharetra turpis, sed feugiat tortor aliquam at. Sed mollis rutrum lectus id semper. Sed nulla sapien, volutpat eget dictum lobortis, facilisis vitae purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut neque nunc.
+
+Duis mauris elit, cursus sit amet cursus sed, aliquet at nisl. Nam pretium tempus sem id eleifend. Aenean fringilla arcu sed mi tempor sollicitudin. Aenean molestie tincidunt dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam condimentum quam faucibus tristique rhoncus. Duis volutpat vel metus id rhoncus.
+
+Nullam ac lectus ut mi rutrum rhoncus eget vitae purus. Phasellus in lobortis ex, in ultrices nulla. Aenean finibus velit id justo cursus efficitur. Quisque at nisl semper, venenatis nisi vel, sollicitudin tortor. Duis ac lorem et sapien pulvinar scelerisque. In sodales sollicitudin erat ut lobortis. Sed ut erat aliquam, elementum eros et, accumsan ipsum. Mauris suscipit, velit sit amet consectetur maximus, enim eros varius tortor, sit amet blandit justo ante cursus sapien. Duis rhoncus accumsan sollicitudin. Nam maximus, sapien vitae ultrices viverra, diam elit posuere est, at elementum tellus mi sed turpis. Pellentesque rhoncus, enim a pretium volutpat, purus lectus finibus tortor, sit amet maximus est neque non turpis. Vivamus at velit non sem consectetur dignissim sed vel lectus. Quisque convallis tempor odio, efficitur commodo lectus lacinia et. Pellentesque consectetur efficitur lacus nec lacinia. Donec maximus, leo a cursus auctor, lectus elit ultrices lectus, vel tempus sem neque vitae libero. Nunc augue nulla, placerat at sem a, vehicula pulvinar leo.
+</div>
+<script>
+    const container = document.getElementById("container")
+    const c = document.getElementById("mycolor")
+    const c2 = document.getElementById("mycolor2")
+    const t = document.getElementById("text")
+    const r1 = document.getEleentById("r1")
+    const n = document.getElementById("n")
+    const micon = document.getElementById("micon")
+
+    var toolbaropen = false
+    micon.onclick = function()
+    {
+        if(toolbaropen)
+    {
+        toolbaropen = false
+        container.style.opacity = "0"
+        document.title = toolbaropen
+    }
+    else
+    {
+        toolbaropen = true
+        container.style.opacity = "1"
+        document.title = toolbaropen
+    }
+
+
+    r1.onchange = function()
+    {
+        t.style.fontsize = this.value+"px"
+        n.innerHTML = "<b>"+this.value+"</b>"
+
+    }
+
+
+
+
+
+
+
+
+    c.onchange = function()
+    {
+        //alert(this.value)
+        document.body.style.background = c.value
+    }
+
+    c2.onchange = function()
+    {
+
+
+        t.style.color = c2.value
+    }
+
+
+
+
+
+
+    document.title = "Ready"
+    </script>
+
+    </body>
+    </html>

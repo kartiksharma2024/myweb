@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic {
+        width: 20%;
+
+    }
+</style>
+
+<body>
+<h1 id="heading">TATA product </h1>
+<h1>How to use JavaScript on already created document or tag </h1>
+
+<img id="mypic" class="pic" src="images/p3.jpeg"> 
+
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto atque facilis aliquid rem, quasi voluptates asperiores dolorum nam nisi animi ipsum, reprehenderit molestias fugiat, magnam in explicabo modi laboriosam reiciendis.
+    Et rerum praesentium magnam voluptatibus possimus porro fugit ad magni, quo aspernatur perspiciatis maiores illum non eos quos harum molestias ab voluptatum doloribus voluptate! Eos porro doloribus voluptatum ut non?
+    Magni, quam consequatur temporibus dolorem, alias laborum dolor odit mollitia provident cupiditate cum voluptatem! Quae, blanditiis vitae expedita odit architecto, consequatur obcaecati odio culpa earum praesentium maiores totam similique quod!
+    Temporibus itaque aliquam dolor, harum, totam labore officia quos quia quasi reiciendis non illum. Dolore autem corporis ullam reiciendis, culpa asperiores minus cum deserunt expedita, perspiciatis, cumque ipsum corrupti quis?
+</p>
+<script>
+    var h = document.getElementById("heading")
+    var p = document.getElementById("mypic")
+
+    p.style.transition="1.50s"
+    p.onclick = function()
+    {
+        this.src="images/p4.jpeg"
+    }
+
+    p.onmouseout = function()
+    {
+        this.src="imges/p3.jpeg"
+
+    }
+
+    h.style = "margin-left:100px;width:200px;background:orange;padding:40px;font-family:Arial balck;text-shadow:5px 5px 4px gray"
+
+    h.style.color = "green"
+    h.style.transition = "0.50s"
+
+    h.onclick = function () {
+        h.style.transform = "scale(2)"
+        this.style.width="800px"
+    
+    }
+
+    h.onmouseover = function () {
+        h.style.cursor = "pointer"
+        h.style.color = "red"
+        this.style.borderRadius ="100px"
+        this.style.background="cyan"
+
+    }
+
+    h.onmouseout = function () {
+        h.style.color = "green"
+          h.style.transform = "scale(1)"
+             this.style.background="orange"
+              this.style.borderRadius ="0px"
+
+    }
+
+    document.title = "Ready"
+</script>
+</body>
+</html>

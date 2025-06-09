@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box
+    {
+        margin:auto;
+        width:30%;
+        background:red;
+        height:500px;
+        box-shadow:10px 10px 10px gray;
+        overflow:hidden;
+        cursor:pointer;
+    }
+    .pic 
+    {
+        width:110%;
+        height:600px;
+        transition:0.50s;
+
+    }
+    #tool
+    {
+        width:25%;
+        position:relative;
+        top:-20px;
+        left:700px;
+
+    }
+    #tool #pp
+    {
+        margin-left:69%;
+    }
+
+</style>
+<body>
+    <h1>Change Pic on Click</h1>
+    <div id="box">
+        <img id="pic" src="images/p1.jpeg" class="pic">
+    </div>
+    <div id="tool"><button id="n">Next</button><button id ="pp">Previous</button></div>
+    <script>
+        var p = document.getElementById("pic")
+        var n = document.getElementById("n")
+        var pp = document.getElementById("pp")
+        var c = 2
+
+        n.onclick = function()
+        {
+
+
+
+            if(c<5)
+                {
+                    c=c+1
+                }
+                else
+                  {
+                    c=1
+                  }
+
+
+
+                  p.src="images/p"+c+".jpeg"
+        }
+
+        pp.onclick = function()
+        {
+            if(c>1)
+                   {
+                    c=c-1
+                   }
+                   else
+                   {
+                    c=5
+                   }
+
+                   p.src="images/p"+c+".jpeg"
+        }
+
+
+
+        p.onmouseover = function()
+        {
+            this.style.transform="scale(1.10)"
+
+        }
+        p.onmouseout = function()
+        {
+            this.style.transform="scale(1)"
+
+        }
+
+        p.onclick = function()
+        {
+            if(c<5)
+                 {
+                    c=c+1
+                 }
+                 else
+                 {
+                    c=1
+                 }
+
+                 document.title = c
+                 p.src="images/p"+c+".jpeg"
+        }
+    </script>
+</body>
+</html>

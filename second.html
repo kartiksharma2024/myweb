@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+DOM :- Document Object Model
+<h1>Creating Element Dynamically</h1>
+<script>
+    var d = document.createElement("img")
+    d.src="images/p1.jpeg"
+    document.body.appendChild(d)
+    d.style.width="50%"
+    d.style.cursor="pointer"
+    d.style.border="12px green solid"
+    d.style.padding="20px"
+    d.style.boxshadow="10px 10px 10px gray"
+
+    d.onclick = function()
+    {
+        d.src="images/p2.jpeg"
+    }
+    d.onmouseout = function()
+    {
+        d.src="images/p1.jpeg"
+    }
+</script>    
+</body>
+</html>

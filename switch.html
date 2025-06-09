@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    header{
+        width:80%;
+        height:600px;
+        margin:auto;
+        text-align:center;
+    }
+    .pic
+    {
+        width:100%;
+        height:100%;
+    }
+</style>
+<body>
+    <header>
+        <H1 id="text">Image of the Day</H1>
+        <img id= "pic" src="images/p1.jpeg" class="pic">
+
+    </header>
+    <script>
+        var pic = document.getElementById("pic")
+        var text = document.getElementById("text")
+
+        var today = new date().getDay()
+        //alert(toda)
+
+        document.title = "Ready"
+
+        switch(today)
+        {
+            case 1:
+            documenttext.innerHTML ="Image of the Monday";
+            pic.src="images/p2.jpeg"
+            break;
+            case 2:
+                documenttext.innerHTML ="Image of the Tuesday";
+            pic.src="images/p3.jpeg"
+            break;
+            case 3:
+                documenttext.innerHTML ="Image of the Wednesday";
+            pic.src="images/p4.jpeg"
+            break;
+            case 4:
+            documenttext.innerHTML ="Image of the Thrusday";
+            pic.src="images/p5.jpeg"
+            break;
+            case 5: 
+            documenttext.innerHTML ="Image of the Friday";
+            pic.src="images/p6.jpeg"
+            break;
+            case 6: 
+            documenttext.innerHTML ="Image of the Saturday";
+            pic.src="images/p7.jpeg"   
+            break;
+            case 7: 
+            documenttext.innerHTML ="Image of the Sunday";
+            pic.src="images/p8.jpeg"
+            break;
+            default:
+        }
+
+
+
+
+        
+    </script>
+</body>
+</html>

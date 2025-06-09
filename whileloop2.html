@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <table border="1" cellpadding="2">
+    <script>
+   // While Loop syntax
+
+   var a = 1;
+   var r = parseInt(prompt("Enter No Of Rows...", "2"));
+   var c = parseInt(prompt("Enter No of Columns...", "2"));
+
+  
+   while (a <= r) {
+                document.write("<tr>");
+                for (var i = 1; i <= c; i++) {
+                    document.write("<td><input type='text'></td>");
+                }
+                document.write("</tr>");
+                a++;
+            }
+        </script>
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#newstoday
+{
+    background:black;
+    color:white;
+    font-size:40px;
+    padding:20px;
+    font-family: Arial Black;
+    text-align:center;
+}
+</style>
+  <div id="newstoday">
+    News 
+  </div>
+  <script>
+
+  /*Array is collection of related data item(variable)
+  1.Single Dim
+  2.Double (multiple) Dim 
+  # All the Array element are created in acontigeous block of memory
+  # Each Array element had index no:-- Known index array
+  # Array can be a object Array
+  # How To create Array
+  Eg var d = new Array (1000)
+  d[0]=1234
+   Array can containe single or mixed Data as above 
+   object Array 
+   Eg var d = ["red", "blue", "green", 101, true]
+
+   Another Way give value to array Element 
+   d(0)="Ravi"
+   d(3)= true 
+    d(1) 10101
+
+    # how to us Array Element:- use them like normal variable 
+    eg
+      alert(d(3))
+      document.write(d(4))
+
+      */
+     var n =document.getElementById('newstoday')
+
+     var news = ["India GDP has reach to height❤", "Arena is hosting Lakshya Exhibition ","Market will remain closed on monday 🌞❤🌟 ","student are visiting water park in delhi", "India win world cup."]
+     n.innerHtml = news[1]
+
+     var c = 0
+     function change_news()
+     {
+        if(c<news.length-1)
+         {
+            c++
+         }
+         else
+         {
+            c=0
+         }
+         n.innerHTML = news[c]
+
+
+         document.title = c
+     }
+
+     setInterval("change_news()",1000)
+
+
+
+     document.title="No Error"
+
+     
+  </script>
+
+<body>
+    
+</body>
+</html>
