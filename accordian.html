@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    #accordian
+    {
+        width:70%;
+        margin:auto;
+        background-color: rgb(189, 226, 187)
+
+    }
+    .box
+    {
+
+
+        font-size: 25px;
+        text-align: justify;
+
+    }
+
+    #aboutsub,#servicessub,#productsub,#policysub
+    {
+            height: 250px;
+            overflow: scroll;
+            padding: 30px;
+
+    }
+
+    #about,#services,#product,#policy
+    {
+        box-shadow: 10px 10px 10px gray;
+        padding: 21px;
+        color:blueviolet;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $("#aboutsub").slideToggle();
+            $("#servicessub").slideUp();
+            $("#productsub").slideUp();
+            $("#policysub").slideUp();
+
+
+            $("#about").click(function()
+            {
+                $("#aboutsub").slideToggle(500)
+            $("#servicessub").slideUp(500)
+            $("#productsub").slideUp(500)
+            $("#policysub").slideUp(500)
+
+            })
+            $("services").click(function(){ $("#servicessub").slideToggle(500)
+            $("aboutsub").slideUp(500)
+
+            $("productsub").slideUp(500)
+            $("policysub").slideUp(500)
+
+        })
+        $("#product").click(function(){ $("#productsub").slideToggle(500)
+
+        $("aboutsub").slideUp(500)
+        $("servicessub").slideUp(500)
+        $("policysub").slideUp(500)
+
+        })
+
+        $("#policy").click(function(){ $("#policysub").slideToggle(500)
+          
+        $("aboutsub").slideUp(500)
+        $("servicessub").slideUp(500)
+        $("productsub").slideUp(500)
+
+        })
+
+    })
+
+    document.title="No Error"
+    
+    </script>
+    <div id="accordian">
+        <div class="box">
+            <h1 id="about">About us</h1>
+            <p id="aboutsub">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores autem nostrum repudiandae assumenda aspernatur doloremque? Dolor deleniti, quae minima suscipit, ipsum facere autem ullam sint, quo laudantium tempore enim corporis!
+                Quisquam recusandae porro possimus qui id itaque, placeat molestiae earum modi pariatur architecto cupiditate commodi quis ratione asperiores. Harum sunt necessitatibus omnis voluptates expedita! Libero cupiditate corporis sequi maiores reprehenderit.
+                Accusamus earum impedit blanditiis illo numquam facilis reiciendis, eius laborum distinctio voluptates est quis explicabo et quae aspernatur nobis autem nihil maiores vero amet voluptate quam, assumenda iusto? Laudantium, nobis!
+                Eveniet, molestias distinctio? Animi, maiores! Velit voluptates iure laborum! Veniam aspernatur voluptatum nobis minus alias asperiores blanditiis expedita? Corrupti modi ipsam magnam illo itaque. Molestiae ea velit fuga atque facilis!
+                Ea voluptas voluptatem quis sunt officia mollitia reprehenderit, recusandae dolorum expedita consequatur, tenetur facere vitae illum dolor debitis tempore dolorem nulla quas dicta nihil esse adipisci consectetur porro! Minus, ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis soluta nemo est numquam omnis ipsa, labore autem ad, officia sequi harum temporibus nulla assumenda, reiciendis molestias rem suscipit officiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae fugit repudiandae, voluptatem labore ipsum voluptates maxime. Qui porro, totam quisquam fuga, ullam, laboriosam repudiandae hic harum ducimus dolore facere.
+
+                <div class="box">
+                    <h1 id="services">Services</h1>
+                    <p id="servicessub">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores autem nostrum repudiandae assumenda aspernatur doloremque? Dolor deleniti, quae minima suscipit, ipsum facere autem ullam sint, quo laudantium tempore enim corporis!
+                Quisquam recusandae porro possimus qui id itaque, placeat molestiae earum modi pariatur architecto cupiditate commodi quis ratione asperiores. Harum sunt necessitatibus omnis voluptates expedita! Libero cupiditate corporis sequi maiores reprehenderit.
+                Accusamus earum impedit blanditiis illo numquam facilis reiciendis, eius laborum distinctio voluptates est quis explicabo et quae aspernatur nobis autem nihil maiores vero amet voluptate quam, assumenda iusto? Laudantium, nobis!
+
+                <img src="images/p1.jpeg" width="20%" align="left" hspace="20" vspace="20" />
+
+
+                Eveniet, molestias distinctio? Animi, maiores! Velit voluptates iure laborum! Veniam aspernatur voluptatum nobis minus alias asperiores blanditiis expedita? Corrupti modi ipsam magnam illo itaque. Molestiae ea velit fuga atque facilis!
+                Ea voluptas voluptatem quis sunt officia mollitia reprehenderit, recusandae dolorum expedita consequatur, tenetur facere vitae illum dolor debitis tempore dolorem nulla quas dicta nihil esse adipisci consectetur porro! Minus, ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis soluta nemo est numquam omnis ipsa, labore autem ad, officia sequi harum temporibus nulla assumenda, reiciendis molestias rem suscipit officiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae fugit repudiandae, voluptatem labore ipsum voluptates maxime. Qui porro, totam quisquam fuga, ullam, laboriosam repudiandae hic harum ducimus dolore facere.
+                    </p>
+
+                    <div class="box">
+                        <h1 id="product">Product</h1>
+                        <p id="productsub">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores autem nostrum repudiandae assumenda aspernatur doloremque? Dolor deleniti, quae minima suscipit, ipsum facere autem ullam sint, quo laudantium tempore enim corporis!
+                Quisquam recusandae porro possimus qui id itaque, placeat molestiae earum modi pariatur architecto cupiditate commodi quis ratione asperiores. Harum sunt necessitatibus omnis voluptates expedita! Libero cupiditate corporis sequi maiores reprehenderit.
+                Accusamus earum impedit blanditiis illo numquam facilis reiciendis, eius laborum distinctio voluptates est quis explicabo et quae aspernatur nobis autem nihil maiores vero amet voluptate quam, assumenda iusto? Laudantium, nobis!
+                Eveniet, molestias distinctio? Animi, maiores! Velit voluptates iure laborum! Veniam aspernatur voluptatum nobis minus alias asperiores blanditiis expedita? Corrupti modi ipsam magnam illo itaque. Molestiae ea velit fuga atque facilis!
+                Ea voluptas voluptatem quis sunt officia mollitia reprehenderit, recusandae dolorum expedita consequatur, tenetur facere vitae illum dolor debitis tempore dolorem nulla quas dicta nihil esse adipisci consectetur porro! Minus, ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis soluta nemo est numquam omnis ipsa, labore autem ad, officia sequi harum temporibus nulla assumenda, reiciendis molestias rem suscipit officiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae fugit repudiandae, voluptatem labore ipsum voluptates maxime. Qui porro, totam quisquam fuga, ullam, laboriosam repudiandae hic harum ducimus dolore facere.
+
+
+                        </p>
+                        
+                    <div class="box">
+                        <h1 id="policy">Policy</h1>
+                        <p id="policysub">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores autem nostrum repudiandae assumenda aspernatur doloremque? Dolor deleniti, quae minima suscipit, ipsum facere autem ullam sint, quo laudantium tempore enim corporis!
+                Quisquam recusandae porro possimus qui id itaque, placeat molestiae earum modi pariatur architecto cupiditate commodi quis ratione asperiores. Harum sunt necessitatibus omnis voluptates expedita! Libero cupiditate corporis sequi maiores reprehenderit.
+                Accusamus earum impedit blanditiis illo numquam facilis reiciendis, eius laborum distinctio voluptates est quis explicabo et quae aspernatur nobis autem nihil maiores vero amet voluptate quam, assumenda iusto? Laudantium, nobis!
+                Eveniet, molestias distinctio? Animi, maiores! Velit voluptates iure laborum! Veniam aspernatur voluptatum nobis minus alias asperiores blanditiis expedita? Corrupti modi ipsam magnam illo itaque. Molestiae ea velit fuga atque facilis!
+                Ea voluptas voluptatem quis sunt officia mollitia reprehenderit, recusandae dolorum expedita consequatur, tenetur facere vitae illum dolor debitis tempore dolorem nulla quas dicta nihil esse adipisci consectetur porro! Minus, ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat debitis soluta nemo est numquam omnis ipsa, labore autem ad, officia sequi harum temporibus nulla assumenda, reiciendis molestias rem suscipit officiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae fugit repudiandae, voluptatem labore ipsum voluptates maxime. Qui porro, totam quisquam fuga, ullam, laboriosam repudiandae hic harum ducimus dolore facere.
+
+                </p>
+
+                    </div>
+
+                </div>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

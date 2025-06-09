@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.min.js" ></script>
+
+</head>
+<!--
+for tile effect
+https://jquery.malsup.com/cycle2/demo/tile.php
+-->
+<style>
+    #myslider
+    {
+        width:70%;
+        margin:auto;
+        box-shadow: 10px 10px 10px gray;
+    }
+    .pic{width:100%;
+        height:400px;
+    }
+
+</style>
+
+<body>
+    <h1>A Trial</h1>
+    <!--
+    https://jquery.malsup.com/cycle/begin.html
+    -->
+    <!--
+    blindX
+blindY
+blindZ
+cover
+curtainX
+curtainY
+fade
+fadeZoom
+growX
+growY
+none
+scrollUp
+scrollDown
+scrollLeft
+scrollRight
+scrollHorz
+scrollVert
+shuffle
+slideX
+slideY
+toss
+turnUp
+turnDown
+turnLeft
+turnRight
+uncover
+wipe
+zoom
+-->
+<script>
+    $(document).ready(function()
+    {
+        $('#myslider').cycle({fx:'shuffle'});
+    })
+</script>
+<div id="myslider">
+    <img src="images/p25.jpeg" class="pic">
+    <img src="images/p26.jpeg" class="pic">
+    <img src="images/p28.jpeg" class="pic">
+    <img src="images/p30.jpeg" class="pic">
+    <img src="images/p31.jpeg" class="pic">
+</div>    
+</body>
+</html>

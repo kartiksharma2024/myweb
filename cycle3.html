@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Drop Effect</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <style>
+        #main img {
+            width: 70%;
+            box-shadow: 10px 10px 10px gray;
+            cursor: pointer;
+            transform-origin: 100% 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <img id="pic" src="images/p38.jpeg" alt="Sample Image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#pic").click(function() {
+                $(this).effect("drop", { direction: "down" }, 500, function() {
+                    $(this).show(1000);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
