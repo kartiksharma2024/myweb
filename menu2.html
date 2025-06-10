@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #menu,ol li{
+        cursor:pointer;
+        transition:2s;
+        background:teal;
+        width:200px;
+        list-style:none;
+        color:white;
+        text-align:center;
+        padding:10px;
+        box-shadow:10px; 10px; 10px; black;
+
+    }
+    ol li:hover
+    {
+        background:yellow;
+        color:red;
+        transform:scale(1.05);
+    }
+
+</style>
+<body>
+    <div id="menu" style="color:rgb(244, 249, 244)">menu</div>
+    <ol id="m1">
+
+        <li>coffee</li>
+        <li>juice</li>
+        <li id="tea"style="color:white">Tea</li>
+        <ul id="subtea">
+            <li>Black tea</li>
+            <li>Ginger tea</li>
+            <li>Cardmom tea</li>
+            <li>Masala tea</li>
+            <li>clove tea</li>
+        </ul>
+        <li>Milk</li>
+        <li>Wine</li>
+    </ol>
+    <script>
+        var menu = document.getElementById("menu")
+        var m1 = document.getElementById("m1")
+        var tea = document.getElementById("tea")
+        var subtea = document.getElementById("subtea")
+        var ismenuopen ="no"
+         var isteaopen ="no"
+
+
+
+        subtea.style.diplay="none"
+        m1.style.display="none"
+        subtea.style.marginLeft="190px"
+        subtea.style.marginTop="-40px"
+         menu.onclick = function()
+         {
+            isteaopen="no"
+            if(ismenuopen=="no")
+             {
+
+                m1.style.display = "block"
+
+                subtea.style.display = "none"
+                ismenuopen ="yes"
+             }
+             else
+             {
+                m1.style.display ="none"
+                //subtea.style.display = "none"
+                ismenuopen="no"
+             }
+
+
+             tea.onclick = function()
+             {
+
+                 if(isteaopen == "no")
+                 {
+                    subtea.style.display = "block"
+                    isteaopen="yes"
+                 }
+                 else
+                 {
+                    su
+                 }
+             }
+         }
+
+    </script>
+</body>
+</html>
